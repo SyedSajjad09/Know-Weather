@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3eeee;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.container {
+    background-color: #FFFFFF;
+    padding: 40px 50px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #4CAF50;
+    margin-bottom: 30px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 12px 20px;
+    background-color: #F1F1F1;
+    border: 2px solid #DDD;
+    border-radius: 10px;
+    color: #333333;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50;
+}
+
+button {
+    width: 25%;
+    padding: 10px 13px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #45A049;
+    transform: scale(1.05);
+}
+
+#weather-info {
+    margin-top: 30px;
+}
+
+#city-name {
+    font-size: 32px;
+    font-weight: 700;
+    color: #566157;
+    margin-bottom: 10px;
+}
+
+#temperature {
+    font-size: 22px;
+    font-weight: 500;
+    color: #333333;
+}
+
+#description {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.hidden {
+    display: none;
+}
+
+#error-message {
+    color: #FF5722;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    input[type="text"] {
+        width: 60%;
+    }
+
+    button {
+        width: 35%;
+    }
+
+    #city-name {
+        font-size: 28px;
+    }
+
+    #temperature {
+        font-size: 20px;
+    }
+
+    #description {
+        font-size: 16px;
+    }
+}
+
+
+.container{
+    content: "All Rights Reserved by Syed";
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #888888;
+    margin-top: 30px;
+    font-weight: 400;
+}
+
